@@ -41,4 +41,4 @@ Customize this README.md however you want to turn it into documentation for your
 
 What different approaches or techniques did you consider when planning your implementation? What were the advantages and disadvantages of those alternatives?
 
-_(Put your reflection answer here.)_
+I started with thinking that I should move the player through the maze array itself, and just display that, but I was not able to work out how to actually do that properly. 
