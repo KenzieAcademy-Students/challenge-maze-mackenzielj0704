@@ -1,1 +1,36 @@
 /* Write your CSS Here. */
+#maze {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1050px;
+}
+.mazeWall {
+    height:50px;
+    width: 50px;
+    background-color: black;
+}
+
+.mazePath {
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+}
+
+.start {
+    height: 50px;
+    width: 50px;
+    background-color: azure;
+}
+.finish {
+    height: 50px;
+    width: 50px;
+    background-color: azure;
+}
+
+.player {
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+}
+
