@@ -144,7 +144,10 @@ maze3Button.addEventListener("click", () => {
 
 function displayMap (mapString) {
     if (isMapDisplayed === true) {
+        let div = document.getElementById("player1")
         maze.innerHTML="";
+        div.innerHTML=""
+        hasWon = false
         isMapDisplayed = false
     }
     if (isPlayerDisplayed === false) {
@@ -199,13 +202,8 @@ document.addEventListener(
     "keydown",
     (event) => {
 
-        if (hasWon === true && mapLayout === mazeMap2) {
-            player.style.top = "750px"
-            return player.style.left = "450px"
-        }
-        if (hasWon === true && mapLayout === mazeMap1) {
-            player.style.top = "450px"
-            return player.style.left = "1000px"
+        if (hasWon === true) {
+            return 
         }
       switch (event.key) {
         case "ArrowDown":
