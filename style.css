@@ -5,7 +5,7 @@
     flex-wrap: wrap;
     width: 1050px;
     background-color: #939191;
-    background-image: url(ground.jpg);
+    background-image: url(./images/ground.jpg);
     background-repeat: repeat;
     background-size: 50px;
 }
@@ -16,7 +16,7 @@
     flex-wrap: wrap;
     width: 400px;
     background-color: #939191;
-    background-image: url(ground.jpg);
+    background-image: url(./images/ground.jpg);
     background-repeat: repeat;
     background-size: 50px;
 }
@@ -25,21 +25,21 @@
     height:50px;
     width: 50px;
     background-color: black;
-    background: url(./wall.jpg);
+    background: url(./images/wall.jpg);
     background-size: 100% 100%;
 }
 
 .mazePath {
     height: 50px;
     width: 50px;
-    background: url(./ground.jpg);
+    background: url(./images/ground.jpg);
     background-size: 100% 100%;
 }
 
 .start {
     height: 50px;
     width: 50px;
-    background: url(./ground.jpg);
+    background: url(./images/ground.jpg);
     background-size: 100% 100%;
 }
 .finish {
@@ -51,7 +51,7 @@
 .player {
     height: 50px;
     width: 50px;
-    background: url(./stitch.jpg);
+    background: url(./images/stitch.jpg);
     background-size: 100% 100%;
     z-index: 1;
 }
@@ -67,7 +67,7 @@
 .crate {
     height: 50px;
     width: 50px;
-    background: url(./crate.png);
+    background: url(./images/crate.png);
     background-size: 100% 100%;
 }
 
@@ -82,7 +82,7 @@
 .storageCrate {
     height: 50px;
     width: 50px;
-    background-image: url(crate.png);
+    background-image: url(./images/crate.png);
     background-size: 100% 100%;
 }
 .xDot {
