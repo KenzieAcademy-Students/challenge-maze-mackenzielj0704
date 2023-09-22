@@ -51,8 +51,8 @@
 .player {
     height: 50px;
     width: 50px;
-    background: url(./images/stitch.jpg);
-    background-size: 100% 100%;
+    background: url(./images/parrot.png);
+    background-size: 95% 100%;
     z-index: 1;
 }
 
