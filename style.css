@@ -1,1 +1,93 @@
 /* Write your CSS Here. */
+#maze {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1050px;
+    background-color: #939191;
+    background-image: url(./images/ground.jpg);
+    background-repeat: repeat;
+    background-size: 50px;
+}
+
+#sokoban {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 400px;
+    background-color: #939191;
+    background-image: url(./images/ground.jpg);
+    background-repeat: repeat;
+    background-size: 50px;
+}
+
+.mazeWall {
+    height:50px;
+    width: 50px;
+    background-color: black;
+    background: url(./images/wall.jpg);
+    background-size: 100% 100%;
+}
+
+.mazePath {
+    height: 50px;
+    width: 50px;
+    background: url(./images/ground.jpg);
+    background-size: 100% 100%;
+}
+
+.start {
+    height: 50px;
+    width: 50px;
+    background: url(./images/ground.jpg);
+    background-size: 100% 100%;
+}
+.finish {
+    height: 50px;
+    width: 50px;
+    background-color: azure;
+}
+
+.player {
+    height: 50px;
+    width: 50px;
+    background: url(./images/parrot.png);
+    background-size: 95% 100%;
+    z-index: 1;
+}
+
+.storage {
+    height: 50px;
+    width: 50px;
+    background-color: rgba(209, 8, 8, 0.592);
+    border-radius: 100%;
+    z-index: 1;
+}
+
+.crate {
+    height: 50px;
+    width: 50px;
+    background: url(./images/crate.png);
+    background-size: 100% 100%;
+}
+
+.sStart {
+    height: 50px;
+    width: 50px;
+    background-color: rgba(209, 8, 8, 0.592);
+    border-radius: 100%;
+    z-index: 1;
+}
+
+.storageCrate {
+    height: 50px;
+    width: 50px;
+    background-image: url(./images/crate.png);
+    background-size: 100% 100%;
+}
+.xDot {
+    height: 50px;
+    width: 50px;
+    background-color: rgba(209, 8, 8, 0.592);
+    border-radius: 50%;
+}
