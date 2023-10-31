@@ -516,7 +516,40 @@ document.addEventListener(
             x += 1
             win()
           break;
+          case "s":
+            if (x === 14) {
+                return
+            }
+            let wx1 = x + 1
+            if (isWall(wx1, y) === true) {
+                return
+            }
+            if (moveCrateDown(wx1,y) === true) {
+                return
+            }
+            player.style.top =
+            parseInt(player.style.top) + 50 + "px"
+            x += 1
+            win()
+          break;
         case "ArrowUp":
+            if (x === 0){
+                return
+            }
+            x2 = x - 1
+            if (isWall(x2, y) === true) {
+                return
+            }
+            if (moveCrateUp(x2, y) === true) {
+                return
+            }
+          player.style.top =
+            parseInt(player.style.top) - 50 + "px"
+            x2 = x - 1
+            x -= 1
+            win()
+          break;
+          case "w":
             if (x === 0){
                 return
             }
@@ -549,6 +582,22 @@ document.addEventListener(
             y -= 1
             win()
           break;
+          case "a":
+            if (y === 0) {
+                return 
+            }
+            let wy1 = y - 1
+            if (isWall(x,wy1) === true){
+                return
+            }
+            if (moveCrateLeft(x,wy1) === true){
+                return
+            }
+          player.style.left =
+            parseInt(player.style.left) - 50 + "px"
+            y -= 1
+            win()
+          break;
         case "ArrowRight":
             if (y=== 20) {
                 return
@@ -558,6 +607,22 @@ document.addEventListener(
                 return
             }
             if (moveCrateRight(x, y2) === true) {
+                return
+            }
+          player.style.left =
+            parseInt(player.style.left) + 50 + "px"
+            y += 1
+            win()
+          break;
+          case "d":
+            if (y=== 20) {
+                return
+            }
+            let wy2 = y + 1
+            if (isWall(x, wy2) === true) {
+                return
+            }
+            if (moveCrateRight(x, wy2) === true) {
                 return
             }
           player.style.left =
